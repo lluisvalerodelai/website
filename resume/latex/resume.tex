@@ -1,0 +1,128 @@
+% Resume for Luis Valero
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Adjust section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+% Custom commands
+\newcommand{\workitem}[4]{
+    \subsection*{#1 \hfill #2}
+    \textit{#3} \hfill #4
+    \vspace{-2pt}
+}
+
+\newcommand{\educationitem}[4]{
+    \subsection*{#1 \hfill #2}
+    \textit{#3} \hfill #4
+    \vspace{-2pt}
+}
+
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{Luis Valero}} \\
+    \vspace{4pt}
+    \href{https://github.com/lluisvalerodelai}{https://github.com/lluisvalerodelai} $|$
+    \href{https://linkedin.com/in/luis-valero-b00896230}{https://linkedin.com/in/luis-valero-b00896230} $|$
+\end{center}
+
+\vspace{-10pt}
+
+% Education
+\section*{EDUCATION}
+
+\educationitem{Bachelor of Science, Data Science \& Artificial Intelligence}{2024 -- 2027}{Leiden University}{GPA: 8.94/10}
+\vspace{2pt}
+\textit{Relevant Coursework:} Reinforcement Learning, Neural Computing, Data Structures \& Algorithms, Databases, Math Structures in CS (topology, manifolds, category theory), High Performance Computing
+
+\vspace{4pt}
+
+\educationitem{International Baccalaureate}{2022 -- 2024}{International School of Helsinki}{}
+\vspace{2pt}
+\textit{Relevant Coursework:} Mathematics Analysis \& Approaches (HL), Physics (HL)
+
+% Work Experience
+\section*{EXPERIENCE}
+
+\workitem{Teaching Assistant}{Oct 2025 -- Present}{Leiden University}{}
+\begin{itemize}
+    \item Teaching assistant for Data Structures \& Algorithms, Probability Theory for CS, and Fundamentals of Programming
+\end{itemize}
+
+\vspace{2pt}
+
+\workitem{Research Assistant}{Mar 2025 -- Sep 2025}{Leiden University}{}
+\begin{itemize}
+    \item Conducted data preparation \& analysis under Dr. M.L. Vives Moya
+    \item Performed sentiment analysis on LLMs with induced psychopathologies
+\end{itemize}
+
+\vspace{2pt}
+
+\workitem{Research Intern}{2022}{UN University -- WIDER}{}
+\begin{itemize}
+    \item Developed automated data analysis pipeline for PhD thesis, reducing week-long workload to 3-hour process
+    \item Analyzed \& cleaned Global Competitiveness Index dataset
+\end{itemize}
+
+% Projects
+\section*{PROJECTS}
+
+\subsection*{\href{https://github.com/lluisvalerodelai/otaOS}{OtaOS -- Custom Operating System}}
+\begin{itemize}
+    \item Built fully functional OS with GRUB bootloader, VGA \& keyboard drivers, multi-task scheduling
+    \item Implemented custom PCI device detection similar to Linux's lspci command
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection*{\href{https://github.com/lluisvalerodelai/START-compiler}{START Compiler -- x86 Compiler}}
+\begin{itemize}
+    \item Open-source x86 compiler for educational programming language START used at Leiden University
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection*{\href{https://github.com/Johk3/AIR}{Cell Segmentation Toolkit}}
+\begin{itemize}
+    \item Voice-controlled cell segmentation tool for AI \& Robotics challenge at Leiden University
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection*{Other Projects}
+\begin{itemize}
+    \item \textbf{\href{https://github.com/lluisvalerodelai/DQNKit}{DQNKit}}: Collection of DQN algorithms with various replay buffer implementations
+    \item \textbf{\href{https://github.com/lluisvalerodelai/8-bit-Computer.git}{8-bit CPU}}: Programmable CPU designed in Logisim with custom instruction set architecture
+    \item \textbf{\href{https://github.com/lluisvalerodelai/Phase-Space-Squares-Game}{Phase Space Explorer}}: Fractal phase space exploration of discrete dynamical systems
+\end{itemize}
+
+% Skills
+\section*{SKILLS}
+
+\textbf{Languages:} English, Spanish, Catalan (fluent); Finnish, French, Dutch (conversational) \\
+\textbf{Technical:} Python, C, C++, x86 Assembly, Reinforcement Learning, Computer Vision, OS Development
+
+\end{document}

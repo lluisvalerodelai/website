@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Valeros Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-name">Luis Valero</span>
+            <div class="nav-links">
+                <a href="https://github.com/lluisvalerodelai" target="_blank">GitHub</a>
+                <a href="resume/resume.pdf" target="_blank">CV</a>
+                <a href="https://linkedin.com/in/luis-valero-b00896230" target="_blank">Linkedin</a>
+                <a href="https://x.com/LluisValero06" target="_blank">X</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-photo">
+                <img src="profile.jpg" alt="Your photo">
+            </div>
+            <div class="hero-content">
+                <h1>Luis Valero</h1>
+                <p class="hero-description">
+                    I like programming. I am currently studying Data Science & AI at Leiden University,
+                    where I also work as a teaching assistant for the courses "Fundamentals of programming", <br>
+                    "Data Structures and Algorithms" and "Probability Theory for Computer Scientists".
+                    I enjoy programming, recreational mathematics, and running various hacky ML expirements.
+                    <br> I was born in Barcelona, Spain, and completed my high school education in Finland. I speak English, Spanish, & Catalan fluently, and can handle conversations in Finnish, French, and Dutch.
+                </p>
+                <nav class="table-of-contents">
+                    <h3>Contents</h3>
+                    <ul>
+                        <li><a href="#work-experience">Work Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#about">About Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-experience" id="work-experience">
+        <h2>Work Experience</h2>
+
+        <div class="work-item">
+            <div class="work-thumbnail">
+                <img src="./Job-photos/leidenSeal.jpg" alt="Work 1">
+            </div>
+            <div class="work-details">
+                <div class="work-header">
+                    <h3>Teaching Assistant</h3>
+                    <p class="work-date">October 2025 - present</p>
+                </div>
+                <p>I am currently working as a teaching assistant for the courses "Data Structures and Algorithms", "Probability Theory for Computer Scientists", and "Fundamentals of Programming" at Leiden University. </p>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-thumbnail">
+                <img src="./Job-photos/leidenSeal.jpg" alt="Work 2">
+            </div>
+            <div class="work-details">
+                <div class="work-header">
+                    <h3>Research Assistant</h3>
+                    <p class="work-date">March 2025 - September 2025</p>
+                </div>
+                <p>I worked as a research assistant doing data preparation & analysis under <a href="https://scholar.google.com/citations?user=zdnBi6gAAAAJ&hl=ca" target="_blank">Dr. M.L. Vives Moya</a>
+                   <br>I ran various sentiment analysis jobs for expirements involving LLMs & induced psychopathologies.</p>
+            </div>
+        </div>
+
+        <div class="work-item">
+            <div class="work-thumbnail">
+                <img src="./Job-photos/UNU-WIDER.png" alt="Work 3">
+            </div>
+            <div class="work-details">
+                <div class="work-header">
+                    <h3>UN University - WIDER Internship</h3>
+                    <p class="work-date">2022</p>
+                </div>
+                <p>While in high school I worked as an intern at the United Nations University WIDER as part of a high school internship program. 
+                  While there I developed an automated process to streamline the data analysis pipeline for a PhD Thesis. I was able to reduce the expected workload of a week into a 3 hour program which analyzed & cleaned the Global Competitiveness Index.</p>
+            </div>
+        </div>
+
+        <!-- <div class="other-work"> -->
+        <!--     <h3>Other Work Experience</h3> -->
+        <!--     <ul> -->
+        <!--         <li><a href="https://company4.com" target="_blank">Position Name 4</a>: Brief description of the role</li> -->
+        <!--         <li><a href="https://company5.com" target="_blank">Position Name 5</a>: Brief description of the role</li> -->
+        <!--         <li><a href="https://company6.com" target="_blank">Position Name 6</a>: Brief description of the role</li> -->
+        <!--         <li><a href="https://company7.com" target="_blank">Position Name 7</a>: Brief description of the role</li> -->
+        <!--     </ul> -->
+        <!-- </div> -->
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-item">
+            <div class="project-thumbnail">
+                <img src="./Proj-photos/AIRphoto.png" alt="Project 1">
+            </div>
+            <div class="project-details">
+                <div class="project-header">
+                    <h3>Cell Segmentation Toolkit</h3>
+                    <a href="https://github.com/Johk3/AIR" target="_blank">GitHub</a>
+                </div>
+                <p>A voice controlled cell segmentation toolkit built as part of the Artificial Intelligence & Robotics challenge at Leiden University.</p>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-thumbnail">
+                <img src="./Proj-photos/OtaOs.png" alt="Project 2">
+            </div>
+            <div class="project-details">
+                <div class="project-header">
+                    <h3>OtaOS</h3>
+                    <a href="https://github.com/lluisvalerodelai/otaOS" target="_blank">GitHub</a>
+                </div>
+                <p>A fully functional operating system that bootloads with GRUB, and comes with keyboard & VGA drivers for a text-based interface & supports multi-task scheduling. It can also detect PCI devices with a custom PCI prober, similiar to the lspci command on Linux.</p>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-thumbnail">
+                <img src="./Proj-photos/STARTCompiler.png" alt="Project 3">
+            </div>
+            <div class="project-details">
+                <div class="project-header">
+                    <h3>START Compiler</h3>
+                    <a href="https://github.com/lluisvalerodelai/START-compiler" target="_blank">GitHub</a>
+                </div>
+                <p>An open source x86 compiler for the educational language START, originally developed by Leiden University and used by Leiden University in the Introduction to Programming course. (Just to be clear, this is not the version they use)</p>
+            </div>
+        </div>
+
+        <div class="other-projects">
+            <h3>Other Notable Projects</h3>
+            <ul>
+                <li><a href="https://github.com/lluisvalerodelai/DQNKit" target="_blank">DQNKit</a>: A collection of DQN Algorithms along with various replay buffer types that grew out of necessity</li>
+                <li><a href="https://github.com/lluisvalerodelai/Phase-Space-Squares-Game" target="_blank">Discrete dynamical system phase space exploration</a>: An exploration into the fractal phase spaces of a simple discrete time ball simulation.</li>
+                <li><a href="https://github.com/lluisvalerodelai/8-bit-Computer.git" target="_blank">Programmable CPU</a>: An 8-bit CPU, designed in logisim. With a whopping 256 bytes of available RAM you can write your own programs using its custom instruction set architechture.</li>
+                <li><a href="https://github.com/lluisvalerodelai/Stochastic-Lotka-Volterra-Simulation/tree/master" target="_blank">Boids-based Stochastic Lotka Volterra Simulation</a>: A boids-based simulation of the stochastic lotka volterra model</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Science, Data Science & Artificial Intelligence</h3>
+            <p class="institution">Leiden University</p>
+            <p class="date">2024 - 2027</p>
+            <p> <b>GPA: 8.94 / 10</b> <br>
+               Notable courses & extra-curriculuars: <br>
+               Reinforcement Learning <br>
+               Neural Computing <br>
+               Data Structures & Algorithms <br>
+               Databases <br>
+               (extra-curriculuar) Math Structures in Computer Science (covering everything from topology to smooth manifolds, and category theory)<br>
+               (extra-curriculuar) High Performance Computing <br>
+               
+                </p>
+        </div>
+        <div class="education-item">
+            <h3>International Baccalaureate</h3>
+            <p class="institution">International School of Helsinki</p>
+            <p class="date">2022 - 2024</p>
+            <p>Notable classes: <br>
+               Mathematics Analysis and Approaches (Higher Level)<br>
+               Physics (Higher Level)</p>
+        </div>
+    </section>
+
+    <section class="resume" id="resume">
+        <h2>Resume</h2>
+        <p>
+            <a href="resume/resume.pdf" target="_blank">View my full resume (PDF)</a>
+        </p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p class="about-description">
+          Besides from spending a lot of time programming, I have always enjoyed self-studying mathematics. I also play in a music band on the weekends, where I play the piano and jazz trumpet. I also enjoy playing football on the weekends with my friends, which is an activity I have been doing all my life. 
+        <br> A fun fact about me is that I used to be a competitive speedcuber when I was younger, and at my peak I averaged ~9.5 seconds on the 3x3 rubiks cube.
+        </p>
+    </section>
+</body>
+</html>

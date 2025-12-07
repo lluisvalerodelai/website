@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+a {
+    color: blue;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: blue;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.hero-container {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.hero-photo {
+    flex-shrink: 0;
+    margin-top: 5rem; /* This is the one for the main photo height */
+}
+
+.hero-photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.work-experience {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.work-experience h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.work-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.work-thumbnail {
+    flex-shrink: 0;
+}
+
+.work-thumbnail img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.work-details {
+    flex: 1;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.work-header h3 {
+    font-size: 1.5rem;
+}
+
+.work-date {
+    font-style: italic;
+    color: #333;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.work-details p {
+    font-size: 1rem;
+}
+
+.other-work {
+    margin-top: 3rem;
+}
+
+.other-work h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.other-work ul {
+    list-style: none;
+}
+
+.other-work li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.other-work a {
+    color: blue;
+    font-weight: bold;
+}
+
+.other-work a:hover {
+    text-decoration: none;
+}
+
+.projects {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+}
+
+.project-thumbnail {
+    flex-shrink: 0;
+}
+
+.project-thumbnail img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.project-header h3 {
+    font-size: 1.5rem;
+}
+
+.project-header a {
+    color: blue;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+}
+
+.project-header a:hover {
+    background-color: black;
+    color: white;
+}
+
+.project-details p {
+    font-size: 1rem;
+}
+
+.other-projects {
+    margin-top: 3rem;
+}
+
+.other-projects h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.other-projects ul {
+    list-style: none;
+}
+
+.other-projects li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.other-projects a {
+    color: blue;
+    font-weight: bold;
+}
+
+.other-projects a:hover {
+    text-decoration: none;
+}
+
+.education {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.education h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.education-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.institution {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.date {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.resume {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.resume h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.resume p {
+    font-size: 1.1rem;
+}
+
+.resume a {
+    color: blue;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.resume a:hover {
+    background-color: black;
+    color: white;
+}
+
+.about {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 4rem auto 2rem;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-photo img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .work-item {
+        flex-direction: column;
+    }
+
+    .work-thumbnail img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-thumbnail img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .gallery-item img {
+        height: 120px;
+    }
+}
